@@ -1,4 +1,5 @@
 package com.mimirandoms.arep1;
+
 import java.io.*;
 import java.net.*;
 import java.util.*;
@@ -16,25 +17,27 @@ public class URLReader {
 
         for (Map.Entry<String, List<String>> entry : entrySet) {
             String headerName = entry.getKey();
-            if(headerName !=null){System.out.print(headerName + ":");}
+            if (headerName != null) {
+                System.out.print(headerName + ":");
+            }
             List<String> headerValues = entry.getValue();
             for (String value : headerValues) {
                 System.out.print(value);
-                }
+            }
             System.out.println("");
         }
 
         System.out.println("-------message-body------");
-        
+
         try (BufferedReader reader
-                       = new BufferedReader(new InputStreamReader(site.openStream()))) {
+                     = new BufferedReader(new InputStreamReader(site.openStream()))) {
             String inputLine = null;
             while ((inputLine = reader.readLine()) != null) {
                 System.out.println(inputLine);
             }
-            } catch (IOException x) {
+        } catch (IOException x) {
             System.err.println(x);
-            }
+        }
 
         System.out.println("-------message-info------");
 
@@ -46,7 +49,6 @@ public class URLReader {
         System.out.println("Query: " + site.getQuery());
         System.out.println("file: " + site.getFile());
         System.out.println("Ref: " + site.getRef());
-
 
 
     }
