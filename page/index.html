@@ -4,11 +4,39 @@
     <title>Taller 1</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    
   </head>
   <body>
-    <div style="display: flex;">
-      <div style="background-color: red; width: 20px; height: 20px"></div>
-      <div style="background-color: blue; width: 20px; height: 20px"></div>
+    <div class="container-main">
+      
+      <div class="header">
+        <h1 class="title">Bienvenido</h1>
+        <img class="main-image" src="/img.jpg" alt="Imagen principal" />
+      </div>
+      
+      <div class="forms-container">
+        
+        <div class="form-section post-section">
+          <h3 class="subtitle">Post</h3>
+          <form id="post-form" class="form">
+            <label class="form-label" for="post-name">Nombre: </label>
+            <input class="form-input" type="text" id="post-name" name="name" />
+            <button class="form-button" type="submit">Enviar</button>
+          </form>
+        </div>
+        
+        <div class="form-section get-section">
+          <h3 class="subtitle">Get</h3>
+          <form id="get-form" class="form">
+            <label class="form-label" for="get-name">Nombre: </label>
+            <p id="get-response-name"></p>
+            <button class="form-button" type="submit">Enviar</button>
+          </form>
+        </div>
+        
+      </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
