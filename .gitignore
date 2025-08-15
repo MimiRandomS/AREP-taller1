@@ -1,0 +1,14 @@
+# Archivos de compilación
+/target/
+/bin/
+
+# Archivos de IntelliJ IDEA
+/.idea/
+/*.iml
+
+# Archivos temporales
+*.log
+*.class
+
+# Otros
+.DS_Store
