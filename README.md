@@ -49,6 +49,13 @@ Para probar el servidor, simplemente abre la aplicación web en el navegador y r
 * Envía datos al servicio REST `/app/postInfo` mediante el formulario de **POST**.
 * Recupera datos mediante el formulario de **GET** en `/app/getInfo`.
 
+Sin embargo, prueba local de que la aplicacion web funciona al usar `http://localhost:35000`. La aplicacion web cuenta dos formularios, uno encargado para POST y otro encargado para el GET, Adicionalmente contiene `styles.css` y una imagen para probar funcionalidad donde el servidor web esta usando correctamente los archivos. 
+![img1.png](Assets/img1.png)
+Al usar el formulario POST se prueba que se guarda el nombre en la base de datos. Donde un ``console.log`` imprime el nombre a guardar.
+![img2.png](Assets/img2.png)
+Y finalmente se usa el formulario GET donde se obtiene el ultimo nombre almacenado.
+![img3.png](Assets/img3.png)
+
 ---
 
 ## Deployment
