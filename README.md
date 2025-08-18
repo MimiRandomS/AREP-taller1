@@ -16,6 +16,10 @@ Necesitas tener instalado:
 - [Java JDK 17+](https://www.oracle.com/java/technologies/javase-jdk17-downloads.html)
 - [Maven](https://maven.apache.org/)
 
+### Architecture
+El proyecto tiene la siguiente estructura:
+![Arquitectura.png](Assets/Arquitectura.png)
+
 ### Installing
 
 1. Clona el repositorio:
